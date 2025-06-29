@@ -1,0 +1,168 @@
+# ==========================================
+# Claude Code - Рекомендуемый .gitignore
+# ==========================================
+
+# === КОММИТИМ В GIT ===
+# .claude/settings.json          - основные настройки проекта
+# .claude/commands/              - кастомные команды
+# .claude/CLAUDE.md              - документация и контекст проекта
+# .claude/README.md              - инструкции для команды
+
+# === НЕ КОММИТИМ В GIT ===
+
+# Локальные настройки (персональные)
+.claude/settings.local.json
+.claude/CLAUDE.local.md
+.claude/local-*
+
+# Временные файлы Claude
+.claude/cache/
+.claude/temp/
+.claude/.tmp/
+.claude/logs/
+.claude/history/
+.claude/session-*
+
+# Чувствительные данные
+.claude/secrets/
+.claude/tokens/
+.claude/credentials/
+.claude/*.key
+.claude/*.pem
+.claude/*.env
+.claude/*password*
+.claude/*secret*
+.claude/*credential*
+
+# Пользовательские настройки IDE/редакторов в Claude папке
+.claude/.vscode/
+.claude/.idea/
+.claude/*.swp
+.claude/*.swo
+.claude/*~
+
+# Резервные копии
+.claude/*.backup
+.claude/*.bak
+.claude/*.orig
+
+# ==========================================
+# Стандартные исключения для разных технологий
+# ==========================================
+
+# === NODE.JS ===
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# === JAVA/MAVEN ===
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
+.mvn/wrapper/maven-wrapper.jar
+
+# === GRADLE ===
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# === PYTHON ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# === IDE ===
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# === LOGS ===
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# === ENVIRONMENT ===
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# === BUILD OUTPUTS ===
+dist/
+build/
+out/
+*.min.js
+*.min.css
+
+# === DATABASES ===
+*.db
+*.sqlite
+*.sqlite3
+
+# === CERTIFICATES & KEYS ===
+*.key
+*.pem
+*.crt
+*.p12
+*.jks
+*.keystore
+
+# === TEMPORARY FILES ===
+*.tmp
+*.temp
+.cache/
+.parcel-cache/
+
+# === OS ===
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# === DOCKER ===
+.dockerignore
+.docker/
+
+# === TESTING ===
+coverage/
+.nyc_output/
+junit.xml
+test-results/
+
+# === MISC ===
+*.tgz
+*.tar.gz
+*.zip
+.sass-cache/
