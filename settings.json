@@ -301,6 +301,7 @@
       "WebFetch(domain:www.jetbrains.com)",
       "WebFetch(domain:react.dev)",
       "WebFetch(domain:kafka.apache.org)",
+      "WebFetch(domain:www.postgresql.org)",
       "Read(**)",
       "Edit(src/**)",
       "Edit(test/**)",
@@ -491,5 +492,6 @@
       "Bash(rm -rf build)",
       "Bash(rm -rf node_modules)"
     ]
-  }
+  },
+  "model": "opus"
 }
