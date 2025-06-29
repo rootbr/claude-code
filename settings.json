@@ -491,6 +491,5 @@
       "Bash(rm -rf build)",
       "Bash(rm -rf node_modules)"
     ]
-  },
-  "model": "opus"
+  }
 }
